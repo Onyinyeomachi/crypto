@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptocurrency Website Design - Simple</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="top">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul>
+          <li><a href="#top">Market</a></li>
+          <li><a href="#top">Features</a></li>
+          <li><a href="#top">Press</a></li>
+          <li><a href="#top">Market</a></li>
+        </ul>
+        <a href="#top" class="btn">EN</a>
+      </nav>
+
+      <div class="content">
+        <h1>BUY & <br />SELL <span>crypto</span></h1>
+        <p>
+          The biggest cryptocurrency exchange available on the web <br />as well
+          as mobile phone.
+        </p>
+        <a href="#top" class="btn">EXPLORE MORE</a>
+      </div>
+
+      <div class="coin-list">
+        <div class="coin">
+          <img src="images/bitcoin.png" />
+          <div>
+            <h3>$<span id="bitcoin"></span></h3>
+            <p>Bitcoin</p>
+          </div>
+        </div>
+        <div class="coin">
+          <img src="images/ethereum.png" />
+          <div>
+            <h3>$<span id="ethereum"></span></h3>
+            <p>Ethereum</p>
+          </div>
+        </div>
+        <div class="coin">
+          <img src="images/dogecoin.png" />
+          <div>
+            <h3>$<span id="dogecoin"></span></h3>
+            <p>Dogecoin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="markets">
+      <div class="market-details">
+        <h2>Markets at Crypt</h2>
+        <p>
+          The Blockchain is a decentralized, digital ledger of transactions that
+          are recorded and confirmed.
+        </p>
+        <div class="features">
+          <div class="feature">
+            <img src="images/buying.png" alt="Buying" />
+            <div>
+              <h3>BUYING</h3>
+              <p>
+                Best cryptocurrency exchanges support the purchase of Bitcoin,
+                Ethereum, Litecoin, and other coins and tokens on the platform.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <img src="images/trading.png" alt="Trading" />
+            <div>
+              <h3>TRADING</h3>
+              <p>
+                Trade Bitcoin, Ethereum, Litecoin, and other cryptocurrencies
+                with the best exchanges on our platform.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <img src="images/supporting.png" alt="Supporting" />
+            <div>
+              <h3>SUPPORTING</h3>
+              <p>
+                Leading exchanges support transactions and management of
+                Bitcoin, Ethereum, Litecoin, and other digital assets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="crypto-image">
+        <img src="images/cryptocurrency.png.PNG" alt="Cryptocurrency Image" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#top">Privacy Policy</a>
+          <a href="#top">Terms of Service</a>
+          <a href="#top">Contact Us</a>
+        </div>
+      </div>
+      <p>&copy; 2024 Cryptocurrency Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
